@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: retail-config
+  namespace: sa-retail
+data:
+  POSTGRES_DB: retaildb
+  REDIS_URL: redis://redis-service:6379
+  DATABASE_URL: postgresql://retailuser:retailpass123@postgres-service/retaildb

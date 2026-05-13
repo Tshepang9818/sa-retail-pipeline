@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: sa-retail
+  labels:
+    app: sa-retail-pipeline
+    environment: production
